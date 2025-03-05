@@ -1,0 +1,10 @@
+*.terraform
+*.tfvars
+*.tfstate
+*.hcl
+*.zip
+*backup
+frontend/build/
+fronend/node_modules/*
+*.out
+.DS_Store
