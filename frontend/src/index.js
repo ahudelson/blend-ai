@@ -8,11 +8,14 @@ import { BrowserRouter } from 'react-router-dom';
 Amplify.configure({
   Auth: {
     region: 'us-east-1',
-    userPoolId: '<user_pool_id>',  // From tofu output
-    userPoolWebClientId: 'user_pool_client',  // From tofu output
+    // Replace with output from  `tofu output`
+    userPoolId: '<user_pool_id>',
+    // Replace with output from  `tofu output`
+    userPoolWebClientId: '<user_pool_client>',
     mandatorySignIn: true,
     oauth: {
-      domain: '<user_pool_domain>',  // From tofu output
+      // Replace with output from  `tofu output`
+      domain: '<user_pool_domain>',
       scope: ['email', 'openid', 'profile'],
       // Update <BASE_URL> with your unique domain name
       redirectSignIn: '<BASE_URL>/callback',
